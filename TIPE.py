@@ -27,7 +27,7 @@ def position_elem (chaine, elem):
 
 def position_vide(chaine) :
    '''Renvoie l’indice de la case vide dans une situation'''
-    return position_elem (chaine,' ')
+   return position_elem (chaine,' ')
     
 # 3_Fonction qui intervertit 2 cases (déplacement du vide)
 
@@ -63,7 +63,7 @@ def degré(chaine):
     D=0
     for i in chaine:
         for j in range (len(chaine)):
-            if int(i)! = int(chaine[j]):
+            if int(i)!= int(chaine[j]):
                 if int(i)>int(chaine[j]) and position_elem (chaine, i) <j:
                     D+=1
     return D
@@ -71,7 +71,7 @@ def degré(chaine):
 # 5.2_solution envisageable ?
 
 def solvable(chaine):
-    if degre(chaine)%2==0:
+    if degré(chaine)%2==0:
         return True
     else :
         return False
